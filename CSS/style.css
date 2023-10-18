@@ -51,7 +51,7 @@ header .logo{
     font-size: 23px;
 }
  
-nav.mobile{
+.mobile{
    display: none; 
 }
 
@@ -71,6 +71,10 @@ nav.desktop a{
     text-decoration: none;
     padding: 0 30px;
     color: white;
+}
+
+nav.desktop a:hover{
+    text-decoration: underline;
 }
 
 section.banner-principal{
@@ -267,40 +271,38 @@ footer p i{
 
 @media  screen and (max-width:700px) {
     nav.desktop{
-        display: none;
-    }
+		display: none;
+	}
 
-    .botao-menu-mobile{
-        color: white;
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    nav.mobile{
-        display: block;
-    }
-
-    nav.mobile ul{
-        width: 100%;
-        display: block;
-        position: absolute;
-        top:55;
-        left: 0;
-        z-index: 3;
-        text-align: center;
-    }
-
-    nav.mobile li{
-        display: block;
-        background: white;
-        border-bottom: 1px solid #ccc;
-        font-weight: 300;
-        font-size: 17px;
-        padding: 8px 0;
-    }
-    nav.mobile li a{
-        display: block;
-        color: #444;
-        text-decoration: none;
-    }
+	nav.mobile{
+		display: block;
+	}
+	.botao-menu-mobile{
+		font-size: 24px;
+		cursor: pointer;
+		color: white;
+	}
+	nav.mobile ul{
+		top:55px;
+		z-index: 3;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		display: none;
+		text-align: center;
+	}
+	nav.mobile li{
+		font-weight: 300;
+		width: 100%;
+		display: block;
+		background: white;
+		border-bottom:1px solid #ccc;
+		font-size: 17px;
+		padding:8px 0;
+	}
+	nav.mobile li a{
+		display: block;
+		color: #444;
+		text-decoration: none;
+	}
 }

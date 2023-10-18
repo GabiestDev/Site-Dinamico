@@ -126,5 +126,8 @@
         <p>Todos os direitos reservados. <i class="fa-regular fa-registered"></i></p>
         </div>
     </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
