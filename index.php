@@ -20,18 +20,18 @@
         <nav class="desktop right">
             <ul>
                 <li> <a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-                <li> <a href="<?php echo INCLUDE_PATH; ?>Sobre">Sobre</a></li>
-                <li> <a href="<?php echo INCLUDE_PATH; ?>Servicos">Serviços</a></li>
-                <li> <a href="<?php echo INCLUDE_PATH; ?>Contato">Contato</a></li>
+                <li> <a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                <li> <a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+                <li> <a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
             </ul>
         </nav>
         <nav class="mobile right">
             <div class="botao-menu-mobile"><i class="fa-solid fa-bars"></i></div>
             <ul>
                 <li> <a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-                <li> <a href="<?php echo INCLUDE_PATH; ?>Sobre">Sobre</a></li>
-                <li> <a href="<?php echo INCLUDE_PATH; ?>Servicos">Serviços</a></li>
-                <li> <a href="<?php echo INCLUDE_PATH; ?>Contato">Contato</a></li>
+                <li> <a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                <li> <a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+                <li> <a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
             </ul>
         </nav>
         <div class="clear"></div>
@@ -56,7 +56,11 @@
         </div>
     </footer>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script> 
+    <?php if($url == 'contato'): ?>
+        <script  src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDHPNQxozOzQSZ-djvWGOBUsHkBUoT_qH4&callback=Function.prototype'></script>
+        <script defer src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
+    <?php endif; ?>
 </body>
 </html>
